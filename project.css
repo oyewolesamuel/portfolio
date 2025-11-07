@@ -1,0 +1,176 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+  align-items: center;
+}
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+.nav-links {
+  display: flex;
+  gap: 21px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: blue;
+  /* text-decoration: underline; */
+}
+.hero {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.img {
+  border-radius: 50%;
+  width: 58%;
+  float: right;
+  background-color: #ffff;
+  box-shadow: 0px 13px 19px 0px #000012;
+}
+
+.name {
+  color: blue;
+}
+.hero-text h1 {
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  width: 542px;
+  height: 160px;
+}
+
+.svg {
+  height: 40px;
+  width: 31px;
+  border-radius: 5px;
+  float: right;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.side-bar p a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.side-bar {
+  position: fixed;
+  padding: 80px 40px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+  height: 66vh;
+  align-items: center;
+  background-color: rgb(66, 130, 233);
+  right: -400px;
+  width: 300px;
+  bottom: 0;
+  transition: right 0.5s ease;
+}
+.side-bar.active {
+  right: 0;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: white;
+  background: rgb(85, 85, 199);
+  border: none;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  transition: background 0.6s ease;
+}
+
+button:hover {
+  background: rgb(210, 200, 89);
+}
+
+span {
+  animation: colorshift 4s infinite alternate;
+}
+
+@keyframes colorshift {
+  0% {
+    color: pink;
+  }
+  50% {
+    color: rgb(150, 100, 243);
+  }
+  100% {
+    color: rgb(189, 64, 85);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .img {
+    width: 445px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 475px) {
+  .img {
+    width: 272px;
+  }
+  .hero-text h1 {
+    font-size: 45px;
+    line-height: 46px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 320px) {
+  .side-bar {
+    width: 107px;
+  }
+}

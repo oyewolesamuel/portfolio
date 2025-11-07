@@ -1,0 +1,77 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+.project h4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  color: #007bff;
+  margin-top: 140px;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.project-card img {
+  background-color: #ffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: auto;
+  max-width: 600px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* max-width: 768px; */
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.project-text p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.school h5 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+}
+
+@media (max-width: 472px) {
+  .project-card img {
+    max-width: 221px;
+  }
+  .project h4 {
+    margin: 83px;
+    font-size: 22px;
+  }
+}
